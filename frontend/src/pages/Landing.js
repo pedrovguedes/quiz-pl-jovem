@@ -23,9 +23,9 @@ const Landing = () => {
         >
           <div className="mb-8 flex justify-center" data-testid="logo-container">
             <motion.img
-              src="https://customer-assets.emergentagent.com/job_pl-history-challenge/artifacts/9uu18gha_logopljovem.jpg"
-              alt="PL Jovem Logo"
-              className="w-40 h-40 object-contain drop-shadow-2xl"
+              src="https://customer-assets.emergentagent.com/job_pl-history-challenge/artifacts/c46t6jpj_PLJ%20TRANSPARENTE.png"
+              alt="PLJ Chega ai Logo"
+              className="w-64 h-64 object-contain drop-shadow-2xl"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}

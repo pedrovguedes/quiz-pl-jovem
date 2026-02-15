@@ -22,19 +22,15 @@ const Landing = () => {
           className="text-center"
         >
           <div className="mb-8 flex justify-center" data-testid="logo-container">
-            <motion.div
-              className="bg-white/5 backdrop-blur-sm rounded-3xl p-6 border-2 border-white/10"
+            <motion.img
+              src="https://customer-assets.emergentagent.com/job_pl-history-challenge/artifacts/gj8d085i_Logo-Branco.png"
+              alt="PLJ Chega ai Logo"
+              className="w-80 h-80 object-contain drop-shadow-2xl"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-            >
-              <img
-                src="https://customer-assets.emergentagent.com/job_pl-history-challenge/artifacts/c46t6jpj_PLJ%20TRANSPARENTE.png"
-                alt="PLJ Chega ai Logo"
-                className="w-72 h-72 object-contain"
-                data-testid="logo-image"
-              />
-            </motion.div>
+              data-testid="logo-image"
+            />
           </div>
 
           <h1 className="font-heading font-extrabold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 uppercase tracking-tight" data-testid="main-heading">

@@ -6,8 +6,10 @@ import { toast } from 'sonner';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { Checkbox } from '@/components/ui/checkbox';
 import { useQuiz } from '@/context/QuizContext';
-import { ArrowLeft, User, Mail, Phone, MapPin, Home, Navigation } from 'lucide-react';
+import { ArrowLeft, User, Mail, Phone, MapPin, Home, Navigation, FileText } from 'lucide-react';
+import TermsDialog from '@/components/TermsDialog';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;

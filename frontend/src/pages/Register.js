@@ -18,6 +18,7 @@ const Register = () => {
   const navigate = useNavigate();
   const { setParticipant } = useQuiz();
   const [loading, setLoading] = useState(false);
+  const [acceptedTerms, setAcceptedTerms] = useState(false);
   const [formData, setFormData] = useState({
     nome: '',
     email: '',

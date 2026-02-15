@@ -1,0 +1,134 @@
+{
+  "project_name": "PL Jovem Quiz",
+  "theme_strategy": "light",
+  "design_principles": [
+    "Patriotic Modernity: Clean, strong lines with national colors but dominated by Professional Blue.",
+    "Action-Oriented: Every screen drives the user to the next step (Register -> Quiz -> Score).",
+    "Gamified Simplicity: The quiz should feel like a game, not a form.",
+    "Data Density (Admin): Admin panel should be dense and informative."
+  ],
+  "typography": {
+    "font_family_heading": "Barlow Condensed, sans-serif",
+    "font_family_body": "Manrope, sans-serif",
+    "import_url": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap",
+    "usage": {
+      "headings": "font-heading font-bold uppercase tracking-tight text-primary",
+      "body": "font-body text-slate-600 leading-relaxed",
+      "labels": "font-heading font-semibold uppercase tracking-wider text-xs"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#0066CC",
+        "foreground": "#FFFFFF",
+        "50": "#E6F0FA",
+        "100": "#CCE0F5",
+        "200": "#99C2EB",
+        "300": "#66A3E0",
+        "400": "#3385D6",
+        "500": "#0066CC",
+        "600": "#0052A3",
+        "700": "#003D7A",
+        "800": "#002952",
+        "900": "#001429"
+      },
+      "secondary": {
+        "DEFAULT": "#FFC627",
+        "foreground": "#0F172A"
+      },
+      "accent": {
+        "DEFAULT": "#22C55E", 
+        "foreground": "#FFFFFF"
+      },
+      "background": "#F8FAFC",
+      "surface": "#FFFFFF",
+      "text": {
+        "main": "#0F172A",
+        "muted": "#64748B"
+      }
+    },
+    "semantic": {
+      "quiz_card_bg": "#FFFFFF",
+      "correct_answer": "#22C55E",
+      "wrong_answer": "#EF4444",
+      "admin_sidebar": "#0F172A"
+    }
+  },
+  "visual_enhancers": {
+    "border_radius": "rounded-xl",
+    "shadows": {
+      "card": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+      "floating": "shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+    },
+    "glassmorphism": "backdrop-blur-md bg-white/80 border border-white/20",
+    "gradients": {
+      "hero": "bg-gradient-to-br from-blue-600 to-blue-800",
+      "gold_text": "bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600"
+    }
+  },
+  "layout_strategies": {
+    "mobile_container": "max-w-md mx-auto min-h-screen flex flex-col bg-slate-50 relative overflow-hidden",
+    "quiz_container": "flex-1 flex flex-col justify-center p-6 gap-6",
+    "admin_dashboard": "grid grid-cols-1 md:grid-cols-[240px_1fr] min-h-screen bg-slate-50"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-white hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 font-heading uppercase tracking-wide text-lg py-6 rounded-xl",
+      "secondary": "bg-white text-primary border-2 border-primary/20 hover:border-primary hover:bg-blue-50 transition-all font-heading uppercase tracking-wide",
+      "option": "w-full text-left p-4 rounded-xl border-2 border-slate-100 hover:border-primary/50 hover:bg-blue-50 transition-all font-body font-medium text-lg relative group"
+    },
+    "inputs": {
+      "default": "h-12 bg-white border-slate-200 focus:border-primary focus:ring-primary/20 rounded-lg font-body"
+    },
+    "cards": {
+      "quiz": "bg-white rounded-2xl shadow-xl p-6 border border-slate-100",
+      "stat": "bg-white rounded-xl shadow-sm p-6 border border-slate-100 flex flex-col gap-2"
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "transitions": {
+      "page_transition": {
+        "initial": { "opacity": 0, "y": 20 },
+        "animate": { "opacity": 1, "y": 0 },
+        "exit": { "opacity": 0, "y": -20 },
+        "transition": { "duration": 0.3 }
+      },
+      "quiz_option": {
+        "whileHover": { "scale": 1.02 },
+        "whileTap": { "scale": 0.98 }
+      }
+    }
+  },
+  "images": {
+    "logo_url": "https://customer-assets.emergentagent.com/job_pl-history-challenge/artifacts/9uu18gha_logopljovem.jpg",
+    "backgrounds": {
+      "flag_texture": {
+        "url": "https://images.unsplash.com/photo-1676899069914-373ae0b13d3e?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "desc": "Blue sky with flag elements for subtle backgrounds"
+      },
+      "hero_crowd": {
+        "url": "https://images.unsplash.com/photo-1632184671104-f1808ac46352?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "desc": "Crowd in yellow/green, patriotic vibe for landing page hero"
+      }
+    }
+  },
+  "instructions_to_main_agent": [
+    "INSTALL framer-motion: `yarn add framer-motion` immediately.",
+    "UPDATE tailwind.config.js to include the custom colors and fonts defined above.",
+    "CREATE a 'Layout' component that handles the mobile-centered view for public users and full-width for admin.",
+    "USE 'Barlow Condensed' for all headings to give that political campaign poster look.",
+    "ENSURE the Quiz flow feels fast: use AnimatePresence for transitions between questions.",
+    "ADMIN PANEL: Must be protected. Use a simple hardcoded login or mock auth for now if backend isn't ready, but UI must show 'Secured Access'.",
+    "DATA COLLECTION: The registration form is the most critical part. Make it clean, validate inputs in real-time.",
+    "THEME: Keep it LIGHT and CLEAN. White backgrounds, Blue text/buttons. Use the Yellow/Green only for accents (like correct answers or highlights).",
+    "DO NOT use generic gradients. Use flat colors or very subtle mesh gradients if absolutely necessary."
+  ],
+  "universal_guidelines": [
+    "Don't make generic centered layouts. Use hierarchy.",
+    "Use 2-3x more spacing than typical designs.",
+    "Interactive elements must have hover/active states.",
+    "All interactive elements must have data-testid attributes."
+  ]
+}

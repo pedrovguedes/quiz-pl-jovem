@@ -22,16 +22,21 @@ const Landing = () => {
           className="text-center"
         >
           <div className="mb-8 flex justify-center" data-testid="logo-container">
-            <motion.img
-              src="https://customer-assets.emergentagent.com/job_pl-history-challenge/artifacts/c46t6jpj_PLJ%20TRANSPARENTE.png"
-              alt="PLJ Chega ai Logo"
-              className="w-64 h-64 object-contain drop-shadow-2xl"
-              style={{ mixBlendMode: 'multiply' }}
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              data-testid="logo-image"
-            />
+            <div className="relative">
+              <motion.img
+                src="https://customer-assets.emergentagent.com/job_pl-history-challenge/artifacts/c46t6jpj_PLJ%20TRANSPARENTE.png"
+                alt="PLJ Chega ai Logo"
+                className="w-80 h-80 object-contain relative z-10"
+                style={{ 
+                  filter: 'drop-shadow(0 10px 40px rgba(0,0,0,0.3))',
+                  mixBlendMode: 'screen'
+                }}
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+                data-testid="logo-image"
+              />
+            </div>
           </div>
 
           <h1 className="font-heading font-extrabold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 uppercase tracking-tight" data-testid="main-heading">

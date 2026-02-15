@@ -59,6 +59,12 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    if (!acceptedTerms) {
+      toast.error('Você precisa aceitar os termos de uso e política de privacidade');
+      return;
+    }
+    
     setLoading(true);
 
     try {

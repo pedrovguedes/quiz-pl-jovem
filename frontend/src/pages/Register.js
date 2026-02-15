@@ -219,10 +219,44 @@ const Register = () => {
               />
             </div>
 
+            <div className="border-t pt-6 mt-2">
+              <div className="flex items-start gap-3">
+                <Checkbox
+                  id="terms"
+                  checked={acceptedTerms}
+                  onCheckedChange={setAcceptedTerms}
+                  className="mt-1"
+                  data-testid="terms-checkbox"
+                />
+                <div className="flex-1">
+                  <Label
+                    htmlFor="terms"
+                    className="text-sm text-slate-700 cursor-pointer leading-relaxed"
+                  >
+                    Li e aceito os{' '}
+                    <TermsDialog>
+                      <button
+                        type="button"
+                        className="text-primary font-semibold hover:underline inline-flex items-center gap-1"
+                        data-testid="terms-link"
+                      >
+                        <FileText className="w-4 h-4" />
+                        Termos de Uso e Política de Privacidade (LGPD)
+                      </button>
+                    </TermsDialog>
+                  </Label>
+                  <p className="text-xs text-slate-500 mt-2 leading-relaxed">
+                    Ao aceitar, você autoriza o PL Jovem a utilizar seus dados de contato para envio de comunicações, 
+                    atualizações de mandato do vereador, convites para eventos e demais atividades institucionais do partido.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <Button
               type="submit"
-              disabled={loading}
-              className="w-full bg-primary text-white hover:bg-primary/90 shadow-lg hover:shadow-xl font-heading uppercase tracking-wide text-lg py-6 rounded-xl"
+              disabled={loading || !acceptedTerms}
+              className="w-full bg-primary text-white hover:bg-primary/90 shadow-lg hover:shadow-xl font-heading uppercase tracking-wide text-lg py-6 rounded-xl disabled:opacity-50 disabled:cursor-not-allowed"
               data-testid="submit-button"
             >
               {loading ? 'Cadastrando...' : 'Continuar para o Quiz'}

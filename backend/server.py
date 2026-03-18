@@ -79,62 +79,100 @@ class AdminToken(BaseModel):
 QUESTIONS = [
     {
         "id": 1,
-        "pergunta": "Em que ano foi fundado o Partido Liberal?",
-        "opcoes": ["2006", "2010", "2015", "2019"],
-        "resposta_correta": 0
+        "pergunta": "Qual o nome completo de Michelle Bolsonaro?",
+        "opcoes": [
+            "Michelle Bolsonaro",
+            "Michelle Nantes Bolsonaro",
+            "Michelle de Paula Firmo Reinaldo Bolsonaro",
+            "Michelle de Paulo Firmo Bolsonaro"
+        ],
+        "resposta_correta": 2
     },
     {
         "id": 2,
-        "pergunta": "Qual é o principal valor defendido pelo PL Jovem?",
-        "opcoes": ["Socialismo", "Liberdade individual", "Estatismo", "Corporativismo"],
-        "resposta_correta": 1
+        "pergunta": "Qual a idade de Jair Bolsonaro?",
+        "opcoes": ["71", "72", "70", "75"],
+        "resposta_correta": 0
     },
     {
         "id": 3,
-        "pergunta": "Qual é a cor oficial do Partido Liberal?",
-        "opcoes": ["Vermelho", "Verde", "Azul", "Amarelo"],
-        "resposta_correta": 2
+        "pergunta": "Qual era a antiga cor do Partido Liberal?",
+        "opcoes": [
+            "Vermelho, verde e branco",
+            "Vermelho, azul e branco",
+            "Azul, verde e amarelo",
+            "Azul e branco"
+        ],
+        "resposta_correta": 1
     },
     {
         "id": 4,
-        "pergunta": "O PL Jovem defende qual modelo econômico?",
-        "opcoes": ["Economia planificada", "Livre mercado", "Economia mista total", "Protecionismo extremo"],
-        "resposta_correta": 1
+        "pergunta": "Quem é a presidente do PL Mulher?",
+        "opcoes": ["Bia Kicis", "Carol de Toni", "Michelle Bolsonaro", "Erika Hilton"],
+        "resposta_correta": 2
     },
     {
         "id": 5,
-        "pergunta": "Qual é o número do Partido Liberal nas urnas?",
-        "opcoes": ["13", "17", "22", "30"],
-        "resposta_correta": 2
+        "pergunta": "Onde o Bolsonaro nasceu?",
+        "opcoes": ["Campinas", "Rio de Janeiro", "Petrópolis", "Glicério"],
+        "resposta_correta": 3
     },
     {
         "id": 6,
-        "pergunta": "Qual presidente brasileiro é filiado ao PL?",
-        "opcoes": ["Lula", "FHC", "Bolsonaro", "Collor"],
-        "resposta_correta": 2
+        "pergunta": "Qual o nome do filho do meio de Bolsonaro?",
+        "opcoes": [
+            "Flávio Bolsonaro",
+            "Eduardo Bolsonaro",
+            "Renan Bolsonaro",
+            "Laura Bolsonaro",
+            "Carlos Bolsonaro"
+        ],
+        "resposta_correta": 1
     },
     {
         "id": 7,
-        "pergunta": "O PL Jovem incentiva o protagonismo de qual faixa etária?",
-        "opcoes": ["Crianças", "Jovens e adultos jovens", "Idosos", "Apenas maiores de 40"],
-        "resposta_correta": 1
+        "pergunta": "Em que ano Bolsonaro tomou posse como Presidente da República?",
+        "opcoes": ["2017", "2018", "2019", "2020"],
+        "resposta_correta": 2
     },
     {
         "id": 8,
-        "pergunta": "Qual é um dos pilares do PL Jovem?",
-        "opcoes": ["Aumento de impostos", "Empreendedorismo", "Controle estatal", "Censura"],
-        "resposta_correta": 1
+        "pergunta": "Qual desses filhos é Senador?",
+        "opcoes": [
+            "Eduardo Bolsonaro",
+            "Carlos Bolsonaro",
+            "Flávio Bolsonaro",
+            "Renan Bolsonaro"
+        ],
+        "resposta_correta": 2
     },
     {
         "id": 9,
-        "pergunta": "O PL defende qual postura em relação à segurança pública?",
-        "opcoes": ["Desarmamento total", "Tolerância zero ao crime", "Abolição da polícia", "Libertação de criminosos"],
-        "resposta_correta": 1
+        "pergunta": "Antes do PL, Bolsonaro estava em qual partido?",
+        "opcoes": ["PSL", "PTB", "PP", "Republicanos"],
+        "resposta_correta": 0
     },
     {
         "id": 10,
-        "pergunta": "Qual é o foco do PL Jovem na educação?",
-        "opcoes": ["Doutrinação ideológica", "Educação de qualidade e sem viés", "Fim das escolas", "Educação apenas pública"],
+        "pergunta": "O número do Partido Liberal (PL) nas urnas é:",
+        "opcoes": ["38", "17", "22", "25"],
+        "resposta_correta": 2
+    },
+    {
+        "id": 11,
+        "pergunta": "Quantos mandatos como deputado federal Bolsonaro teve antes de ser presidente?",
+        "opcoes": ["4", "5", "6", "7"],
+        "resposta_correta": 3
+    },
+    {
+        "id": 12,
+        "pergunta": "Quem desponta como nome da família para a presidência em 2026?",
+        "opcoes": [
+            "Eduardo Bolsonaro",
+            "Flávio Bolsonaro",
+            "Michelle Bolsonaro",
+            "Carlos Bolsonaro"
+        ],
         "resposta_correta": 1
     }
 ]

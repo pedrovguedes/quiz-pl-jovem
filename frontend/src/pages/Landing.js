@@ -38,7 +38,7 @@ const Landing = () => {
           </h1>
 
           <p className="font-body text-xl sm:text-2xl text-blue-100 mb-12 max-w-2xl mx-auto leading-relaxed" data-testid="subtitle">
-            Teste seus conhecimentos sobre a história do PL Jovem e mostre que você é um verdadeiro patriota!
+            Teste seus conhecimentos sobre Bolsonaro e o Partido Liberal e mostre que você é um verdadeiro patriota!
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
@@ -50,7 +50,7 @@ const Landing = () => {
               data-testid="feature-questions"
             >
               <Award className="w-8 h-8 text-secondary mb-3 mx-auto" />
-              <h3 className="font-heading font-bold text-white text-lg uppercase">10 Perguntas</h3>
+              <h3 className="font-heading font-bold text-white text-lg uppercase">12 Perguntas</h3>
               <p className="text-blue-100 text-sm mt-2">Desafie seu conhecimento</p>
             </motion.div>
 
